@@ -12,26 +12,8 @@ document.getElementById("sign-up").addEventListener("input", (e) => {
   }
 });
 
-// if (email_checker() && password_checker()) {
-//   btn.removeAttribute("disabled");
-// } else {
-//   console.log(
-//     "your email or password incorrect! please enter the correct credential",
-//   );
-// }
-
-// function email_checker() {
-//   if (email.includes("@") && email.includes(".")) {
-//     return true;
-//   } else {
-//     return false;
-//   }
-// }
-
-// function password_checker() {
-//   if (password.length < 8) {
-//     return false;
-//   } else {
-//     return true;
-//   }
-// }
+document.getElementById("sign-up").addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("form submmitted successfully ");
+  document.getElementById("name-input").value = "";
+  document.getElementById("input-password").value = "";});
