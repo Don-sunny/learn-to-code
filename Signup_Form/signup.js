@@ -16,4 +16,5 @@ document.getElementById("sign-up").addEventListener("submit", (event) => {
   event.preventDefault();
   console.log("form submmitted successfully ");
   document.getElementById("name-input").value = "";
-  document.getElementById("input-password").value = "";});
+  document.getElementById("input-password").value = "";
+});
